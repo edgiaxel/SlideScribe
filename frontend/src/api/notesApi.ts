@@ -1,7 +1,9 @@
 import type { Note } from '../types';
 import { INITIAL_DEFAULT_NOTE } from '../types';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL.replace(/\/+$/, '')}/api`
+  : 'http://localhost:8000/api';
 const LOCAL_STORAGE_KEY = 'slidescribe_local_notes_v1';
 
 // In-browser fallback storage ensuring persistence across reload even without backend
