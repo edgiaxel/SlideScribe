@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-10-19 03:32:23",
+  "checks": {
+    "home_loaded": {
+      "passed": true,
+      "details": "Page title: 'SlideScribe - AI-Assisted Lecture Notes & Study Companion', Sidebar present: True"
+    },
+    "note_editor_opened": {
+      "passed": true,
+      "details": "Editor/article DOM element found: True"
+    },
+    "note_autosave_interaction": {
+      "passed": true,
+      "details": "Title updated: True, Autosave indicator active: True"
+    },
+    "import_materials_view": {
+      "passed": true,
+      "details": "Dropzones visible: True, Empty submit protection: button_disabled_by_default"
+    },
+    "study_view_and_tabs": {
+      "passed": true,
+      "details": "Study view present: True, Flashcard tab toggled: True, Flashcard state: True"
+    },
+    "settings_modal": {
+      "passed": true,
+      "details": "Settings opened: True, Modal text verified: True"
+    }
+  },
+  "screenshots": [
+    "01_home.png",
+    "02_note_editor.png",
+    "03_import_materials.png",
+    "04_study.png",
+    "05_settings_modal.png"
+  ],
+  "console_errors": [],
+  "failed_network_requests": [],
+  "overall_status": "PASSED"
+}

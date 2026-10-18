@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ba1a1a","surface":"#fcf9f0","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","outline-variant":"#c2c7ca","primary-container":"#4a636d","on-secondary":"#ffffff","error-container":"#ffdad6","on-error":"#ffffff","on-tertiary-fixed":"#331107","background":"#fcf9f0","on-surface":"#1c1c17","on-secondary-container":"#56674f","surface-tint":"#49626c","surface-container-highest":"#e5e2da","on-primary":"#ffffff","tertiary":"#683c2f","surface-container-high":"#ebe8df","primary-fixed":"#cce7f3","tertiary-container":"#845344","primary-fixed-dim":"#b0cbd6","surface-dim":"#dcdad1","on-primary-container":"#c3deea","primary":"#324b55","surface-bright":"#fcf9f0","surface-variant":"#e5e2da","secondary-container":"#d2e5c6","on-tertiary-fixed-variant":"#673b2e","on-tertiary-container":"#ffd0c2","surface-container":"#f0eee5","inverse-primary":"#b0cbd6","secondary":"#52634b","surface-container-low":"#f6f4ea","secondary-fixed":"#d5e8c9","secondary-fixed-dim":"#b9ccae","on-surface-variant":"#42484a","tertiary-fixed-dim":"#f7b8a5","on-primary-fixed-variant":"#314a54","on-secondary-fixed-variant":"#3b4b34","tertiary-fixed":"#ffdbd0","on-secondary-fixed":"#111f0c","on-primary-fixed":"#031f27","inverse-surface":"#31312b","outline":"#72787b","on-background":"#1c1c17","inverse-on-surface":"#f3f1e8","on-error-container":"#93000a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1.25rem","gutter-desktop":"2rem","space-xl":"2.5rem","margin-desktop":"2.5rem","space-md":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1.25rem","space-xs":"0.25rem"},fontFamily:{"headline-sm":["Literata"],"label-md":["Manrope"],"headline-lg":["Literata"],"display-lg":["Literata"],"body-md":["Manrope"],"display-lg-mobile":["Literata"],"body-sm":["Manrope"],"body-lg":["Manrope"],"headline-md":["Literata"],"label-sm":["Manrope"],"label-lg":["Manrope"]},fontSize:{"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"500"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"600"}],"display-lg":["40px",{"lineHeight":"48px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg-mobile":["30px",{"lineHeight":"38px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-[#F5F0E7] font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto px-space-md pt-space-md"><div class="flex items-center justify-between pb-space-md mb-space-sm"><div class="flex items-center gap-space-xs"><img alt="SlideScribe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UBSq-QpQvxxH8HMhCd-2tt9aMWBtjyzDop75yVttxQu1c5rwNROlPUc15YDJlEwKg9oySxomo162LoX95RZCDIU7JAElF_mrK3BEGpr3YffuIqKwJyu0_cpTl19ylN8UECKpD14uZvMuQdolmTzMUxNDxIYWTXgPpfbYTkFYu5Eiy49kgs_2FhRi98naFpuxSMqL89QjG8HzvS6lE-5toSksFPs47xyC8Go_vVoJWa5khQEQACsyRgAw"/><span class="font-headline-sm text-headline-sm tracking-tight text-inverse-on-surface ml-space-xs">SlideScribe</span></div><button aria-label="Collapse sidebar" class="text-outline-variant hover:text-inverse-on-surface transition-colors p-space-xs rounded-lg" type="button"><span class="material-symbols-outlined text-lg">dock_to_right</span></button></div><div class="mb-space-md"><button class="w-full flex items-center justify-between bg-surface-variant/20 hover:bg-surface-variant/30 text-inverse-on-surface/80 px-space-sm py-space-xs rounded-xl text-left transition-colors" type="button"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-sm text-outline-variant">search</span><span class="font-body-sm text-body-sm text-outline-variant">Search notes...</span></div><kbd class="font-label-sm text-label-sm bg-inverse-surface border border-outline-variant/30 text-outline-variant px-1.5 py-0.5 rounded-lg">⌘K</kbd></button></div><div class="mb-space-md"><button class="w-full flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-primary-container px-space-md py-space-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-colors" type="button"><span class="material-symbols-outlined text-lg">add</span><span class="font-label-lg text-label-lg">New Note</span></button></div><nav class="flex flex-col gap-space-xs mb-space-lg" data-active-classes="bg-surface-variant/30 text-inverse-on-surface font-label-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-base">grid_view</span><span class="font-body-md text-body-md">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-base">auto_stories</span><span class="font-body-md text-body-md">All Lectures</span></a></nav><div class="flex items-center justify-between px-space-xs mb-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline-variant">My workspace</span><button aria-label="Create new notebook" class="text-outline-variant hover:text-inverse-on-surface transition-colors p-space-xs" type="button"><span class="material-symbols-outlined text-sm">add</span></button></div><div class="flex flex-col gap-space-xs"><div class="flex flex-col"><button class="flex items-center gap-space-xs w-full px-space-xs py-space-xs text-left text-inverse-on-surface font-body-sm text-body-sm rounded-lg hover:bg-surface-variant/10 transition-colors" type="button"><span class="material-symbols-outlined text-sm text-outline-variant">arrow_drop_down</span><span class="material-symbols-outlined text-base text-secondary-fixed">folder_open</span><span class="truncate font-medium">Business Analytics</span></button><nav class="flex flex-col pl-space-lg pr-space-xs py-space-xs gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-label-md"><a class="px-space-xs py-space-xs rounded-lg text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface font-body-sm text-body-sm transition-colors truncate" data-path="business-analytics-week-1" href="#">Week 1 - Introduction</a><a class="px-space-xs py-space-xs rounded-lg text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface font-body-sm text-body-sm transition-colors truncate" data-path="business-analytics-week-2" href="#">Week 2 - Forecasting</a><a class="px-space-xs py-space-xs rounded-lg text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface font-body-sm text-body-sm transition-colors truncate" data-path="business-analytics-week-3" href="#">Week 3 - Clustering</a></nav></div><div class="flex flex-col"><button class="flex items-center gap-space-xs w-full px-space-xs py-space-xs text-left text-inverse-on-surface/80 font-body-sm text-body-sm rounded-lg hover:bg-surface-variant/10 transition-colors" type="button"><span class="material-symbols-outlined text-sm text-outline-variant">arrow_right</span><span class="material-symbols-outlined text-base text-outline-variant">folder</span><span class="truncate">Customer Relationship Management</span></button></div><div class="flex flex-col"><button class="flex items-center gap-space-xs w-full px-space-xs py-space-xs text-left text-inverse-on-surface/80 font-body-sm text-body-sm rounded-lg hover:bg-surface-variant/10 transition-colors" type="button"><span class="material-symbols-outlined text-sm text-outline-variant">arrow_right</span><span class="material-symbols-outlined text-base text-outline-variant">folder</span><span class="truncate">Machine Learning Fundamentals</span></button></div></div></div><div class="p-space-md bg-inverse-surface/90 border-t border-outline-variant/10 flex flex-col gap-space-xs"><nav class="flex flex-col" data-active-classes="bg-surface-variant/30 text-inverse-on-surface"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-xl text-inverse-on-surface/70 hover:bg-surface-variant/20 hover:text-inverse-on-surface font-body-sm text-body-sm transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-base">settings</span><span>Settings</span></a></nav><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc8ZFCL2Wta6r6RG9r7s5e8ycrYRESY9QRkYDgYFv9cPDwEGn_3A_UXJrdZ-Jk3XhYAvLZ3BwxYo4-U2Lcb1ck1BLPBxz6KAuaIlG79ZuUwICTsMwzG8oTZeZ4RL4XVSmDUB97d9P790xIfOENGH60yI3xz6ILMc6sniA2TLUG1TJd96jBYggU1dF5LvBjSPpsB3gUmLJR0S3u5D3Hbg_sFyvN9H2iK2jjHMPzg5DV3Cyw8JptrwE"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-inverse-on-surface leading-none">Elena Vance</span><span class="font-body-sm text-body-sm text-outline-variant leading-tight">Graduate Student</span></div></div><button aria-label="Toggle dark or light theme" class="text-outline-variant hover:text-inverse-on-surface p-space-xs rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-base">light_mode</span></button></div></div></aside><div class="pl-64"><main class="relative bg-[#F5F0E7] min-h-screen text-on-surface"><div class="flex flex-col w-full">
+<!-- Streamlined Top Navigation Header -->
+<header class="sticky top-0 z-40 bg-[#FFFCF7]/90 backdrop-blur-md border-b border-[#E7E2D8] px-space-lg py-3 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-1 px-2 -ml-2 rounded-lg hover:bg-surface-variant/40" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Understanding Forecasting</span>
+</a>
+<span class="text-outline-variant">·</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+        Business Analytics
+      </span>
+</div>
+<!-- Mode Switcher Pills -->
+<div class="inline-flex items-center p-1 bg-surface-container rounded-full border border-[#E2DDD3]">
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#FFFCF7] text-primary shadow-sm font-label-md text-label-md font-bold transition-all" id="btn-mode-quiz" type="button">
+<span class="material-symbols-outlined text-sm">fact_check</span>
+<span>Quiz Mode</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all" id="btn-mode-flashcards" type="button">
+<span class="material-symbols-outlined text-sm">style</span>
+<span>Flashcards Mode</span>
+</button>
+</div>
+</header>
+<!-- Main Consolidated Interface -->
+<div class="p-space-lg lg:p-space-xl max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PRIMARY AREA: Active Mode (Quiz or Flashcards) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- QUIZ MODE VIEW -->
+<section class="flex flex-col gap-space-md" id="quiz-view">
+<!-- Progress Bar & Count -->
+<div class="flex items-center justify-between gap-4 px-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Question 4 of 10</span>
+<span class="text-outline-variant">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Qualitative vs Quantitative</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">40% complete</span>
+</div>
+<div class="w-full h-1.5 bg-[#E7E2D8] rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[40%] transition-all duration-300"></div>
+</div>
+<!-- Question Card -->
+<div class="bg-[#FFFCF7] rounded-xl border border-[#E7E2D8] p-space-lg shadow-sm flex flex-col gap-space-lg">
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-snug">
+            Under what condition did Professor Thorne recommend deploying qualitative consensus methods (Delphi) over quantitative time-series models?
+          </h1>
+<!-- 4 Answer Choices -->
+<div class="flex flex-col gap-space-sm" role="radiogroup">
+<!-- Choice A (Selected & Correct) -->
+<div class="group relative flex items-start p-space-md rounded-xl bg-secondary-container/35 border border-secondary text-on-surface transition-all cursor-pointer">
+<div class="flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-md text-label-md mr-space-md shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Option A</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">
+                    Correct
+                  </span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium mt-1">
+                  When historical telemetry and time-series data are zero or unreliably sparse, such as pre-launch phases.
+                </p>
+</div>
+</div>
+<!-- Choice B -->
+<div class="group relative flex items-start p-space-md rounded-xl bg-[#FAF6EE] hover:bg-surface-container border border-transparent hover:border-[#E2DDD3] text-on-surface transition-all cursor-pointer">
+<div class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md mr-space-md shrink-0 mt-0.5 group-hover:bg-[#E2DDD3]">
+                B
+              </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Option B</span>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+                  When seasonal differencing parameter 'S' equals 12 across non-stationary demand curves.
+                </p>
+</div>
+</div>
+<!-- Choice C -->
+<div class="group relative flex items-start p-space-md rounded-xl bg-[#FAF6EE] hover:bg-surface-container border border-transparent hover:border-[#E2DDD3] text-on-surface transition-all cursor-pointer">
+<div class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md mr-space-md shrink-0 mt-0.5 group-hover:bg-[#E2DDD3]">
+                C
+              </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Option C</span>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+                  When the exponential smoothing dampening alpha coefficient approaches 1.0.
+                </p>
+</div>
+</div>
+<!-- Choice D -->
+<div class="group relative flex items-start p-space-md rounded-xl bg-[#FAF6EE] hover:bg-surface-container border border-transparent hover:border-[#E2DDD3] text-on-surface transition-all cursor-pointer">
+<div class="flex items-center justify-center w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md mr-space-md shrink-0 mt-0.5 group-hover:bg-[#E2DDD3]">
+                D
+              </div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-label-sm font-semibold text-outline uppercase tracking-wider">Option D</span>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+                  Exclusively during quarterly shareholder earnings disclosures.
+                </p>
+</div>
+</div>
+</div>
+<!-- Grounded Feedback Box -->
+<div class="p-space-md rounded-xl bg-secondary-container/20 border border-secondary-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 text-secondary font-semibold font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Grounded in Lecture Material</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Professor Thorne noted that Delphi consensus panels are critical when historical time-series data simply does not exist yet. Iterative anonymous surveys remove dominant voice bias.
+            </p>
+<div class="flex items-center gap-2 pt-1 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#FFFCF7] border border-[#E2DDD3] text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-secondary">co_present</span>
+                Slide 14: Qualitative Forecasting
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#FFFCF7] border border-[#E2DDD3] text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-primary">mic</span>
+                Audio: 18:40
+              </span>
+</div>
+</div>
+<!-- Navigation Action -->
+<div class="flex items-center justify-end pt-space-xs">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg transition-all shadow-sm group" type="button">
+<span>Next Question</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- FLASHCARDS VIEW (Hidden by default, toggleable via top pills) -->
+<section class="hidden flex-col gap-space-md" id="flashcards-view">
+<!-- Progress Bar & Count -->
+<div class="flex items-center justify-between gap-4 px-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Card 4 of 18</span>
+<span class="text-outline-variant">·</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Forecasting Frameworks</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Click card to reveal answer</span>
+</div>
+<div class="w-full h-1.5 bg-[#E7E2D8] rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[22%] transition-all duration-300"></div>
+</div>
+<!-- Flippable Flashcard Container -->
+<div class="bg-[#FFFCF7] rounded-xl border border-[#E7E2D8] p-space-xl shadow-sm min-h-[300px] flex flex-col justify-between cursor-pointer group hover:border-primary/40 transition-all" id="flashcard-card">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Question · Concept Front</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">flip</span>
+<span>Click to Flip</span>
+</span>
+</div>
+<div class="my-space-lg flex flex-col gap-3">
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-snug" id="card-prompt">
+              Under what conditions should qualitative consensus methods (Delphi) replace quantitative models?
+            </h2>
+<div class="hidden p-space-md rounded-xl bg-secondary-container/20 border border-secondary-container" id="card-back">
+<p class="font-body-lg text-body-lg text-on-surface">
+                When historical data is non-existent or sparse (e.g. brand new product category), requiring structured expert panel consensus to forecast.
+              </p>
+<span class="mt-2 block font-label-sm text-label-sm text-secondary font-medium">Source: Slide 14 · Audio 18:40</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-[#E7E2D8]/60">
+<span class="font-label-sm text-label-sm text-outline">Shortcuts: [Space] to flip</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Delphi Method</span>
+</div>
+</div>
+<!-- Review / Mastered Actions -->
+<div class="flex items-center justify-center gap-space-md">
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#FAF6EE] hover:bg-[#EAE4D7] border border-[#E2DDD3] text-on-surface font-label-lg text-label-lg transition-all" type="button">
+<span class="material-symbols-outlined text-base text-tertiary">replay</span>
+<span>Needs Review</span>
+</button>
+<button class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-secondary text-on-secondary hover:bg-secondary/90 font-label-lg text-label-lg shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+<span>Mastered</span>
+</button>
+</div>
+</section>
+<!-- Bottom Quick Flashcard Teaser (visible in Quiz Mode) -->
+<div class="bg-[#FAF6EE] border border-[#E7E2D8] rounded-xl p-space-md flex items-center justify-between gap-space-md" id="flashcard-teaser">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-[#FFFCF7] border border-[#E2DDD3] flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base">style</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Want faster conceptual review?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Switch to the 18-card forecasting flashcard deck.</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#FFFCF7] hover:bg-[#EAE4D7] border border-[#E2DDD3] text-on-surface font-label-md text-label-md transition-all shrink-0" onclick="switchMode('flashcards')" type="button">
+<span>Open Flashcards</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- RIGHT SIDEBAR: Grounded Source Evidence Panel -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-[#FFFCF7] rounded-xl border border-[#E7E2D8] p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-[#E7E2D8]/80 pb-3">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-base text-primary">menu_book</span>
+<h2 class="font-label-lg text-label-lg font-bold">Grounded Source Evidence</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Week 2</span>
+</div>
+<!-- Slide 14 Thumbnail & Citation -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Slide 14: Qualitative Forecasting</span>
+<span>Presentation</span>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden border border-[#E7E2D8] group bg-surface-container">
+<img alt="Slide 14 qualitative forecasting presentation slide" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ljgGUSUxaEpSyN5HEvZBvKL5rt7ZtNgfzClTpEQQKvds0Iu1rHVyCW2lnKG46grLu2nwZyGC3Rg5M-uLLl60YoIoKAEpSzItgR_sbsYMi4030ChvEaJ223Kick1Gec0iu8ZniKmxQitNKXZ8bubu9XT8G8j0_uEkHi56eeAM8aWFLGr9yXeaeI3UM6mF50DDMxeFK9G8fo60kSrJoS6wGNqin3iC6_Oh7aqV6pM2yVTVPz7cqlI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex flex-col justify-end p-2.5 text-white">
+<span class="font-label-sm text-[11px] font-semibold text-secondary-fixed">Delphi Consensus Method</span>
+<p class="font-body-sm text-[12px] text-white/90 line-clamp-1">
+                Zero historical data conditions &amp; anonymous rounds
+              </p>
+</div>
+</div>
+</div>
+<!-- Verbatim Audio Excerpt -->
+<div class="bg-[#FAF6EE] border border-[#E7E2D8] p-space-md rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-sm">mic</span>
+<span>Audio Quote (18:40)</span>
+</div>
+<button aria-label="Play recording clip" class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-xs">play_arrow</span>
+</button>
+</div>
+<blockquote class="font-body-md text-body-md italic text-on-surface-variant leading-relaxed">
+            "…because the experts do not meet face-to-face, we eliminate peer pressure and dominant authority biases when baseline telemetry is sparse."
+          </blockquote>
+<span class="font-label-sm text-label-sm text-outline text-right">— Prof. Aris Thorne</span>
+</div>
+<!-- Honest Attribution Footnote -->
+<p class="font-body-sm text-body-sm text-outline-variant text-center">
+          Directly linked to your uploaded lecture recording &amp; deck.
+        </p>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  function switchMode(mode) {
+    const quizView = document.getElementById('quiz-view');
+    const flashcardsView = document.getElementById('flashcards-view');
+    const teaser = document.getElementById('flashcard-teaser');
+    const btnQuiz = document.getElementById('btn-mode-quiz');
+    const btnFlash = document.getElementById('btn-mode-flashcards');
+
+    if (mode === 'quiz') {
+      quizView.classList.remove('hidden');
+      quizView.classList.add('flex');
+      flashcardsView.classList.add('hidden');
+      flashcardsView.classList.remove('flex');
+      teaser.classList.remove('hidden');
+
+      btnQuiz.className = "inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#FFFCF7] text-primary shadow-sm font-label-md text-label-md font-bold transition-all";
+      btnFlash.className = "inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all";
+    } else {
+      quizView.classList.add('hidden');
+      quizView.classList.remove('flex');
+      flashcardsView.classList.remove('hidden');
+      flashcardsView.classList.add('flex');
+      teaser.classList.add('hidden');
+
+      btnFlash.className = "inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#FFFCF7] text-primary shadow-sm font-label-md text-label-md font-bold transition-all";
+      btnQuiz.className = "inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-semibold transition-all";
+    }
+  }
+
+  document.getElementById('btn-mode-quiz').addEventListener('click', () => switchMode('quiz'));
+  document.getElementById('btn-mode-flashcards').addEventListener('click', () => switchMode('flashcards'));
+
+  // Toggle flashcard front / back
+  const flashcard = document.getElementById('flashcard-card');
+  const cardBack = document.getElementById('card-back');
+  if (flashcard && cardBack) {
+    flashcard.addEventListener('click', () => {
+      cardBack.classList.toggle('hidden');
+    });
+  }
+</script>
+</main></div></body></html>
